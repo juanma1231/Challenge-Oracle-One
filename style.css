@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background:url(imagenes/bg.jpg);
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:"encriptar encriptar image"
+    "encriptar encriptar  informacion"
+    "encripDesencript encripDesencript copiar"
+    ;
+}
+
+.encripDesencript{
+    grid-area: encripDesencript;
+}
+.encriptar{
+    grid-area: encriptar;
+
+}
+.image{
+    grid-area: image;
+    padding-right: 20%;
+}
+
+.no{
+    grid-area: no;
+}
+.item{
+    background:url(imagenes/bg.jpg);
+    color: black;
+    text-align: center;
+
+}
+.informacion{
+    grid-area: informacion;
+    text-align: center;
+    margin-top: 30px;
+}
+#texto2{
+    background: url(imagenes/bg.jpg);
+    height: 70%;
+    width: 50%;
+    border: none;
+    outline: none;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    color: white;
+}
+#texto{
+    width: 90%;
+    height: 90%;
+    background:url(imagenes/bg.jpg);
+    text-align: left;
+    border: none;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    color: white;
+    padding-top: 40PX;
+    padding-left: 50PX;
+}
+#texto::placeholder{
+    color: white;
+}
+#texto:hover{
+    border: none;
+    outline: none;
+}
+#texto:focus{
+    border: none;
+    outline: none;
+}
+.encripDesencript{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0;
+    padding-left: 20%;
+}
+#btn-desencriptar{
+
+    padding: 3%;
+    margin: 8px;
+    width: 35%;
+    background-color: white;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+#btn-encriptar{
+    padding: 3%;
+    margin: 8px;
+    width: 35%;
+    background-color: dodgerblue;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.copiar{
+    padding: 1% 0;
+    margin-left: 30%;
+    grid-area: copiar;
+
+}
+#btn-copy{
+    margin-left: 90px;
+    margin-top: 30px;
+    width: 25%;
+    height: 30%;
+    background-color: dodgerblue;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+
+}
+.image img{
+    margin: 10px;
+    border: 5px solid white;
+    width: 50%;
+    height: 100%;
+    border-radius: 25%;
+    -webkit-border-radius: 25%;
+    -moz-border-radius: 25%;
+    -ms-border-radius: 25%;
+    -o-border-radius: 25%;
+}
+#encabezado{
+    color: white;
+    margin-left: 40px;
+}
+#suTexto{
+    color: dodgerblue;
+}
